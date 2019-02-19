@@ -1,0 +1,56 @@
+*{margin:0;padding:0;}
+ul li{list-style:none;}
+
+.logo{
+  width:50px;
+  height:50px;
+  background:grey;
+  border-radius:50%;
+}
+
+button{
+  position:absolute;
+  top:0;
+  right:0;
+  margin-top:15px;
+  margin-right:10px;
+}
+
+.nav{
+  position:relative;
+}
+
+.menu2{
+  display:none;
+}
+
+.menu{
+  display:none;
+}
+
+.menu.active{
+  display:flex;
+  justify-content:space-around;
+  background:#ddd;
+}
+
+@media(min-width:451px){
+  button{
+    display:none;
+  }
+  .menu2{
+    position:absolute;
+    display:flex;
+    top:0;
+    right:10px;
+    float:left;
+    margin-top:13px;
+    width:425px;
+    justify-content:space-around;
+  }
+  .menu.active{
+    display:none;
+  }
+
+ 
+}
